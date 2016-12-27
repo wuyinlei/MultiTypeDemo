@@ -23,6 +23,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.renren.multitypedemo.bean.Category;
+
 import me.drakeet.multitype.ItemViewProvider;
 
 /**

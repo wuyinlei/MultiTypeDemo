@@ -1,5 +1,7 @@
 package com.renren.multitypedemo;
 
+import com.renren.multitypedemo.bean.Category;
+
 import me.drakeet.multitype.GlobalMultiTypePool;
 
 /**

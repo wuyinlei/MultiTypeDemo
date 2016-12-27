@@ -1,4 +1,4 @@
-package com.renren.multitypedemo;
+package com.renren.multitypedemo.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,9 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.renren.multitypedemo.Items.DataEntity.UsersEntity;
+import com.renren.multitypedemo.R;
+import com.renren.multitypedemo.bean.Items.DataEntity.UsersEntity;
 
-import me.drakeet.multitype.GlobalMultiTypePool;
 import me.drakeet.multitype.ItemViewProvider;
 
 /**

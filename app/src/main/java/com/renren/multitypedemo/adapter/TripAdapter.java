@@ -1,7 +1,6 @@
-package com.renren.multitypedemo;
+package com.renren.multitypedemo.adapter;
 
 import android.content.Context;
-import android.icu.text.SimpleDateFormat;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -12,7 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.renren.multitypedemo.Items.DataEntity.TripsEntity;
+import com.renren.multitypedemo.R;
+import com.renren.multitypedemo.bean.Items.DataEntity.TripsEntity;
 
 import me.drakeet.multitype.ItemViewProvider;
 

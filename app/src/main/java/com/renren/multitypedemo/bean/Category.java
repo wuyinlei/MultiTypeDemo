@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.renren.multitypedemo;
+package com.renren.multitypedemo.bean;
 
 import android.support.annotation.NonNull;
 

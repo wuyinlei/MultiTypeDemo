@@ -1,4 +1,4 @@
-package com.renren.multitypedemo;
+package com.renren.multitypedemo.adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.renren.multitypedemo.Items.DataEntity.PlacesEntity;
+import com.renren.multitypedemo.R;
+import com.renren.multitypedemo.bean.Items.DataEntity.PlacesEntity;
 
 import me.drakeet.multitype.ItemViewProvider;
 

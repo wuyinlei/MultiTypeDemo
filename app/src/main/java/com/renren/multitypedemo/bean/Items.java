@@ -1,4 +1,4 @@
-package com.renren.multitypedemo;
+package com.renren.multitypedemo.bean;
 
 import java.util.List;
 
