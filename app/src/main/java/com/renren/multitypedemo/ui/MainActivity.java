@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                             if (mTripsBeen.size() > 0) {
                                 Category category = new Category(getResources().getString(R.string.place_id));
                                 items.add(category);
-                                for (int i = 0; i < mTripsBeen.size(); i++) {
+                                for (int i = 0; i < mTripsBeen.size(); i++) {  //还有这个地方要一个一个添加,要不然就会出现错误
                                     items.add(mTripsBeen.get(i));
                                 }
 
@@ -90,8 +90,10 @@ public class MainActivity extends AppCompatActivity {
                             mMultiTypeAdapter.register(Items.DataEntity.PlacesEntity.class,new SceneAdapter());
                             mMultiTypeAdapter.register(Items.DataEntity.TripsEntity.class,new TripAdapter());
                             mMultiTypeAdapter.register(Items.DataEntity.UsersEntity.class,new UserAdapter());
+                            //这里必须要注册一下,要不然会报错
                             MultiTypeAsserts.assertAllRegistered(mMultiTypeAdapter,items);
                             mRecyclerView.setAdapter(mMultiTypeAdapter);
+
                         }
 
                     }

@@ -21,7 +21,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.renren.multitypedemo.bean.Category;
 
@@ -41,19 +43,27 @@ public class CategoryItemViewProvider
 
 
     @Override
-    protected void onBindViewHolder(@NonNull ViewHolder holder, @NonNull Category category) {
+    protected void onBindViewHolder(@NonNull final ViewHolder holder, @NonNull final Category category) {
         holder.title.setText(category.title);
+        holder.mReCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(holder.itemView.getContext(), category.title, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
     static class ViewHolder extends RecyclerView.ViewHolder {
 
         @NonNull private final TextView title;
+        private RelativeLayout mReCategory;
 
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.tv_category);
+            mReCategory = (RelativeLayout) itemView.findViewById(R.id.re_category);
         }
     }
 }
